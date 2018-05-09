@@ -1,0 +1,49 @@
+<%
+// Template control select
+if (generateTemplate === 1) {%>
+/**
+ * <%= controllerName %>
+ *
+ * @description :: Server-side logic for managing <%= modelName %>
+ * @help 		:: See http://links.sailsjs.org/docs/controllers
+ */
+
+declare var sails: any;
+
+<% if(actionFns ===  0) { %>
+export function index(req: any, res: any, next: Function): any {
+  res.status(200).send(`Hello ${controllerName}`);
+}
+<% } else if(actionFns !== 0) { %>
+<%= actionFns %>
+<% } %>
+
+
+<% }
+// Template Model select
+else if (generateTemplate === 2) { %>
+/**
+ * <%= modelName %>
+ *
+ * @description :: A model definition.  Represents a database table/collection/etc.
+ * @docs        :: https://sailsjs.com/docs/concepts/models-and-orm/models
+ */
+
+export class <%= modelName %> {
+  attributes: any = {
+    //  ╔═╗╦═╗╦╔╦╗╦╔╦╗╦╦  ╦╔═╗╔═╗
+    //  ╠═╝╠╦╝║║║║║ ║ ║╚╗╔╝║╣ ╚═╗
+    //  ╩  ╩╚═╩╩ ╩╩ ╩ ╩ ╚╝ ╚═╝╚═╝
+
+
+    //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
+    //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
+    //  ╚═╝╩ ╩╚═╝╚═╝═╩╝╚═╝
+
+
+    //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
+    //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
+    //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
+  }
+}
+<%}%>

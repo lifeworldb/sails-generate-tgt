@@ -1,0 +1,12 @@
+<%
+// Template control select
+if (generateTemplate === 1) {%>
+
+export function <%= actionsName %>(req: any, res: any, next: Function): any {
+  res.status(200).send('Hello <%= actionsName %>');
+}
+
+<% }
+// Template Model select
+else if (generateTemplate === 2) { %>
+<% } %>

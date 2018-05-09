@@ -1,0 +1,41 @@
+{
+  "name": "sails-generate-tgt",
+  "version": "1.0.4",
+  "description": "sails generate tgt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'No further automated tests have been implemented for this generator yet.'",
+    "pretest": "npm run lint",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0"
+  },
+  "keywords": [
+    "cts",
+    "generator",
+    "sails",
+    "generate",
+    "plugin",
+    "controller",
+    "model",
+    "sails-generator"
+  ],
+  "author": "lifeworldb",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.2.4",
+    "lodash": "^3.10.1",
+    "merge-defaults": "^0.2.1",
+    "pluralize": "^7.0.0"
+  },
+  "devDependencies": {
+    "eslint": "3.19.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sebas/sails-generate-cts.git"
+  },
+  "sailsGenerator": {
+    "type": "cts",
+    "behavior": "Implements or overrides `sails generate cts`",
+    "sailsVersion": "^1.0.0"
+  }
+}
