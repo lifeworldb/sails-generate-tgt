@@ -104,7 +104,7 @@ module.exports = {
     }
 
     if (actions.length == 0) {
-      scope.actions = [];
+      scope.actions = 0;
       console.log("cumple")
     }
     // Fin Validation actions

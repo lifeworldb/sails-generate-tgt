@@ -60,6 +60,9 @@ The [Sails framework](https://sailsjs.com) is free and open-source under the [MI
 
 ## Log Version
 
+### v1.0.5
+- FIX: generator controller
+
 ### v1.0.4
 - The generator for controller and model is reduced to a single template
 - Work continues on the generator of the model
