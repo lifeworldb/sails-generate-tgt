@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "^1.2.4",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.20",
     "merge-defaults": "^0.2.1",
     "pluralize": "^7.0.0"
   },
